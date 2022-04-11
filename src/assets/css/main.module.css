@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* 기본설정
+----------------------------- */
+/* 문서 전체 크기, 여백 설정 */
+html, body { width: 80%; height: 100%; padding: 0; margin: auto; font: normal 13px Avenir, Arial, georgia; font-size: 15px; } 
+
+/* Float 처리 클래스 */
+.pull-left { float: left; } 
+.pull-right { float: right; } 
+.clearfix:after { content: ''; display: block; clear: both; float: none; } 
+
+/* ======== 메인 ========  */
+.mainContainer {
+    width: 100%;
+    height: 9rem;
+}
+
+.topBannerText {
+    width: 33%;
+    height: 100%;
+    margin-left: 2.5rem;
+    display: inline-block;
+}
+.topBannerText1 {
+    margin: 4rem 0.3rem 5rem 0.3rem;
+    display: inline-block;
+}
+.topBannerText2 {
+    margin: 0.3rem;
+    display: inline-block;
+}
+
+.topBannerImg {
+    margin: auto;
+    width: 52%;
+    height: 100%;
+    float: right;
+}
+
+/* ======== DaySelector ========  */
+.dayContainer {
+    padding-left: 3.5rem;
+    padding-top: 1.5rem;
+}
+/* ======== LocalSelector ========  */
+.local {
+    margin: 1rem 1.3rem;
+}
+/* ======== PartySelector ========  */
+.partyBox {
+    border-bottom: 3px solid gray;
+}
+.party{
+    text-align: center;
+    line-height: 3rem;
+}
+/* ======== Footer ========  */
+.footer {
+    text-align: center;
+    line-height: 3rem;
+    border-right: 1px solid gray;
+}
+.footer:last-child {
+    border-right: none;
+}
+.footerTitle {
+    margin: 3rem 0 1rem 0;
+    font-weight: bold;
+}

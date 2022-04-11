@@ -1,0 +1,19 @@
+/* 소개배너 */
+.bannerContainer {
+    position: relative;
+}
+
+.bannerImage {
+    width: 100%;
+}
+
+.bannerTextContainer {
+    position: absolute;
+    left: 9rem;
+    bottom: 1rem;
+    text-align: center;
+}
+.bannerText {
+    padding: 1rem;
+    color: rgb(62, 165, 31);
+}

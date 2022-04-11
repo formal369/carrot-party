@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { NavLink, Routes, Route } from 'react-router-dom';
+
+import HomePage from './pages/HomePage';
+import IntroducePage from './pages/IntroducePage';
+import MakePartyPage from './pages/MakePartyPage';
+import LoginPage from './pages/LoginPage';
+
+import './assets/css/bootstrap.min.css';
+import './assets/css/reset.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/introduce" element={<IntroducePage />} />
+        <Route exact path="/makeparty" element={<MakePartyPage />} />
+        <Route exact path="/login" element={<LoginPage />} />
+      </Routes>
     </div>
   );
 }
