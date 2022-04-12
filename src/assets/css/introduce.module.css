@@ -17,3 +17,75 @@
     padding: 1rem;
     color: rgb(62, 165, 31);
 }
+
+/* 소개서브배너 */
+
+.subBannerTextContainer {
+    text-align: center;
+    padding-top: 2rem;
+}
+.subBannerTextContainer:last-child {
+    padding-bottom: 2rem;
+}
+.subBannerText {
+    padding: 1rem;
+    color: rgb(13, 15, 12);
+}
+/* 이미지 */
+.imageContainer {
+    position: relative;
+
+}
+.introduceImage {
+    width: 100%;
+    margin: auto;
+}
+.introduceText {
+    width: 60%;
+    left: 20%;
+    bottom: 0;
+    position: absolute;
+    background-color: rgb(52, 235, 189);
+    padding: 0.5rem;
+}
+
+/* 버튼 */
+.introduceButtonContainer {
+    display: inline-block;
+    width: 33%;
+    padding-top: 3rem;
+}
+.introduceButtonImage1 {
+    display: block;
+    background: url("../img/soccer.jpg");
+    background-size: 130em;
+    background-position: 93rem 85rem;
+    border-radius: 50%;
+    width: 18rem;
+    height: 18rem;
+    margin: auto;
+}
+.introduceButtonImage2 {
+    display: block;
+    background: url("../img/chess.jpg");
+    background-size: 85em;
+    background-position: 53rem 44rem;
+    border-radius: 50%;
+    width: 18rem;
+    height: 18rem;
+    margin: auto;
+}
+.introduceButtonImage3 {
+    display: block;
+    background: url("../img/community.jpg");
+    background-size: 100em;
+    background-position: 133rem 52rem;
+    border-radius: 50%;
+    width: 18rem;
+    height: 18rem;
+    margin: auto;
+}
+.introduceButtonText {
+    text-align: center;
+    padding-top: 1rem;
+}
