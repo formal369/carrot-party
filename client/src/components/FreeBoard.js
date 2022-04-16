@@ -24,8 +24,8 @@ const FreeBoard = () => {
 
     const submitContents = () => {
       Axios.post('http://localhost:8000/api/insert', {
-        title: viewContent.title,
-        content: viewContent.content
+        title: boardContent.title,
+        content: boardContent.content
       }).then(()=>{
         alert('등록 완료!');
       })

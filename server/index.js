@@ -26,16 +26,12 @@ app.get("/api/get", (req, res)=>{
     })
 })
 
-// app.get("/", (req, res)=>{
-//     const sqlQuery = "INSERT INTO freeboard (title, content) VALUES ('이건', '되거라!')";
-//     db.query(sqlQuery, (err, result)=>{
-//         res.send('success!');
-//     });
-// })
+
 
 app.post("/api/insert", (req, res) => {
     const title = req.body.title;
     const content = req.body.content;
+    console.log('결과: ' + req.body.title);
     const sqlQuery = "INSERT INTO freeboard (title, content) VALUES (?,?)";
     db.query(sqlQuery, [title, content], (err, result) => {
         res.send('success!');
