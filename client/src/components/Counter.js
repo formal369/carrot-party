@@ -16,9 +16,9 @@ const Counter = () => {
                     setNumber(number > 1 ? (number - 1) : (number - 0))}}
                 className={styles.btns}
                     >-</Button>
-            {/* &nbsp; */}
-                <h5 className={styles.btns}>{number} 명</h5>
-
+            &nbsp;
+                <h5 className={styles.btns}>{number} 명 </h5>
+            &nbsp;
             <Button
                 onClick={(e) => {
                     e.preventDefault();

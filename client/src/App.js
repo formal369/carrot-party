@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import IntroducePage from './pages/IntroducePage';
 import MakePartyPage from './pages/MakePartyPage';
 import LoginPage from './pages/LoginPage';
+import FreeBoardPage from './pages/FreeBoardPage';
 
 import './assets/css/bootstrap.min.css';
 import './assets/css/reset.css';
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/introduce" element={<IntroducePage />} />
         <Route exact path="/makeparty" element={<MakePartyPage />} />
         <Route exact path="/login" element={<LoginPage />} />
+        <Route exact path="/freeboard" element={<FreeBoardPage />} />
       </Routes>
     </div>
   );
