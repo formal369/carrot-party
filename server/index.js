@@ -27,13 +27,12 @@ app.get("/api/get", (req, res)=>{
 })
 
 
-
 app.post("/api/insert", (req, res) => {
     const title = req.body.title;
     const content = req.body.content;
-    console.log('결과: ' + req.body.title);
-    const sqlQuery = "INSERT INTO freeboard (title, content) VALUES (?,?)";
-    db.query(sqlQuery, [title, content], (err, result) => {
+    const local = req.body.local;
+    const sqlQuery = "INSERT INTO freeboard (title, content, local) VALUES (?,?,?)";
+    db.query(sqlQuery, [title, content, local], (err, result) => {
         res.send('success!');
     });
 });
